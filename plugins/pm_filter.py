@@ -403,14 +403,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons =[ [
+            
+            InlineKeyboardButton('‼️ JOIN OUR COMMUNITY ‼️', url='https://t.me/filmcognito')
         ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('📺 JOIN FOR MOVIES 📺', url='https://t.me/filmcognitomoviesin')  
         ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🕹️ JOIN FOR LIVE STREAMS 🕹️ ',url='https://t.me/filmcognitolives1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(

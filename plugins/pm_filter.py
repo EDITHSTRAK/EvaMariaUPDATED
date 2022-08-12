@@ -409,7 +409,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('📺 JOIN FOR MOVIES 📺', url='https://t.me/filmcognitomoviesin')  
         ], [
-            InlineKeyboardButton('🕹️ JOIN FOR LIVE STREAMS 🕹️ ',url='https://t.me/filmcognitolives1')
+            InlineKeyboardButton('🕹️ JOIN FOR LIVE SERIES COLLECTION 🕹️ ',url='https://t.me/filmcognitoseries')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
